@@ -73,6 +73,8 @@
   
   _settingsButton.backgroundColor = [GSTATE buttonColor];
   _settingsButton.titleLabel.font = [UIFont fontWithName:[GSTATE boldFontName] size:14];
+    
+    [_settingsButton addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
   
   _targetScore.textColor = [GSTATE buttonColor];
   
@@ -100,6 +102,14 @@
   [_overlay.keepPlaying setTitleColor:[GSTATE buttonColor] forState:UIControlStateNormal];
   [_overlay.restartGame setTitleColor:[GSTATE buttonColor] forState:UIControlStateNormal];
 }
+   
+   -(void)btnClicked {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+       NSObject * object = [[NSObject alloc] init];
+       [object performSelector:@selector(rgkjnjrstjshrtnogt)];
+#pragma clang diagnostic pop
+   }
 
 
 - (void)updateScore:(NSInteger)score

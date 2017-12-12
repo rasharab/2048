@@ -11,6 +11,8 @@
 
 @interface M2ViewController : UIViewController
 
+- (void)btnClicked;
+
 - (void)updateScore:(NSInteger)score;
 
 - (void)endGame:(BOOL)won;
